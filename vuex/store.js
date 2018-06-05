@@ -21,16 +21,17 @@ const mutations = {
 				text:默认文字内容
 				favorite:收藏
 			*/
-			text:"new Note",
+			title:"New Note",
+      content:"",
 			favorite:false
 		}
 
 		state.notes.push(newNote)
 		state.activeNote = newNote
 	},
-	EDIT_NOTE(state,text){
+	EDIT_NOTE(state,title){
 
-		state.activeNote.text = text
+		state.activeNote.title = title
 	},
 	SET_ACTIVE_NOTE(state,note){
 
